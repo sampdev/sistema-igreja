@@ -1,0 +1,637 @@
+// Cores
+
+$primary-color: #004894;
+$background-gray-light: #f4f9ff;
+$background-light: #ffffff;
+$background-btn: #e6eff9;
+$cor-text: #999999;
+$cor-text-dark: #333333;
+$green: #2ecc71;
+$blue-light: #3498db;
+$blue-medium: #3c67ee;
+$red: #e74c3c;
+$border-color-1: #e6f1fd;
+$border-color-2: #d8e6f7;
+
+// Padding e Margin
+
+$padding-0: 0px;
+$padding-5: 5px;
+$padding-10: 10px;
+$padding-15: 15px;
+$padding-20: 20px;
+$padding-25: 25px;
+$padding-30: 30px;
+$padding-35: 35px;
+$padding-40: 40px;
+$padding-45: 45px;
+$padding-50: 50px;
+$padding-55: 55px;
+$padding-60: 60px;
+$padding-65: 65px;
+$padding-70: 70px;
+$padding-75: 75px;
+$padding-80: 80px;
+$padding-85: 85px;
+$padding-90: 90px;
+$padding-95: 95px;
+$padding-100: 100px;
+
+$margin-0: 0px;
+$margin-5: 5px;
+$margin-10: 10px;
+$margin-15: 15px;
+$margin-20: 20px;
+$margin-25: 25px;
+$margin-30: 30px;
+$margin-35: 35px;
+$margin-40: 40px;
+$margin-45: 45px;
+$margin-50: 50px;
+$margin-55: 55px;
+$margin-60: 60px;
+$margin-65: 65px;
+$margin-70: 70px;
+$margin-75: 75px;
+$margin-80: 80px;
+$margin-85: 85px;
+$margin-90: 90px;
+$margin-95: 95px;
+$margin-100: 100px;
+
+// Font Size
+
+$font-size-1: 14px;
+$font-size-2: 16px;
+$font-size-3: 18px;
+$font-size-4: 20px;
+$font-size-5: 24px;
+
+// Font Weight
+
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+
+// Transitions
+
+$transition-1: .2s ease-in-out;
+$transition-2: .3s ease-in-out;
+
+// Box Shadow
+
+$box-shadow-1: 0 0 1px 0 rgba(59,89,178,.1),0 2px 8px rgba(59,89,178,.15);
+
+// Border Radius
+
+$border-radius-1: 5px;
+$border-radius-2: 50px;
+$border-radius-rounded: 50%;
+
+// Mixins
+
+@mixin card-br-bx {
+    border-radius: $border-radius-1;
+    box-shadow: $box-shadow-1;
+    padding: $padding-20;
+    background-color: $background-light;
+}
+
+// Geral
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    transition: $transition-1;
+    color: $blue-medium;
+
+    &:hover {
+        text-decoration: none;
+        color: $primary-color;
+    }
+}
+
+.flaticon {
+    &:before{
+        margin: $margin-0;
+        font-weight: $font-regular;
+        font-size: $font-size-5;
+    }
+}
+
+p {
+    color: $cor-text;
+}
+
+b {
+    font-weight: $font-medium;
+}
+
+button {
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+input, select {
+    border-radius: $border-radius-2;
+}
+
+textarea {
+    border-radius: $border-radius-1;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px 20px;
+    color: $cor-text;
+    border: 0;
+}
+
+form {
+    width: 100%;
+}
+
+// Buttons
+
+.btn-si-action {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: $border-radius-rounded;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    i {
+        color: #ffffff;
+    }
+
+    &.approved {
+        background-color: $green;
+    }
+
+    &.recused {
+        background-color: $red;
+    }
+
+    &.edit {
+        background-color: $blue-light;
+    }
+
+    &.view {
+        background-color: $background-btn;
+        
+        i {
+            color: $blue-light;
+        }
+    }
+}
+
+.btn-si {
+    padding: $padding-10 $padding-20;
+    border-radius: $border-radius-2;
+    background: $background-btn;
+
+    &.approved {
+        color: $green;
+    }
+
+    &.recused {
+        color: $red;
+    }
+
+    &.pendent {
+        color: $cor-text;
+    }
+}
+
+#nav-app {
+    &:-webkit-scrollbar {
+        display: none;
+    }
+}
+
+// Nav App
+
+#nav-app {
+    position: fixed;
+    width: 350px;
+    max-height: 100%;
+    top: 0;
+    bottom: 0;
+    box-shadow: $box-shadow-1;
+    background-color: $background-light;
+    overflow-y: auto;
+
+    .brand {
+        padding: $padding-20;
+        border-bottom: 1px solid $border-color-1;
+
+        .main-brand {
+
+            img {
+                max-height: 50px;
+            }
+        }
+    }
+
+    .user {
+        border-bottom: 1px solid $border-color-1;
+        padding: $padding-20;
+
+        .content-img {
+            border-radius: $border-radius-rounded;
+            overflow: hidden;
+            width: 60px;
+            height: 60px;
+        }
+
+        .content-text {
+            p, span {
+                margin-bottom: $margin-0;
+            }
+
+            margin-left: $margin-10;
+
+            .user-name {
+                font-size: $font-size-2;
+                color: $blue-medium;
+                font-weight: $font-medium;
+            }
+
+            .user-function {
+                font-size: $font-size-1;
+                font-weight: $font-regular;
+                color: $cor-text;
+            }
+        }
+
+        .flaticon {
+            &:before {
+                color: $cor-text;
+            }
+        }
+    }
+
+    .main-nav-app {
+
+        li {
+            a{
+                display: flex;
+                padding: $padding-15 $padding-20;
+                border-bottom: 1px solid $border-color-1;
+                color: $cor-text;
+                font-weight: $font-medium;
+                cursor: pointer;
+
+                &:hover {
+                    color: $cor-text;
+                }
+
+                &.dropdown-nav {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+            }
+
+            ul {
+                li {
+                    background: $background-gray-light;
+                    
+                    &:last-child {
+                        a {
+                            border: none;
+                        }
+                    }
+                    
+                    a {
+                        border-bottom: 1px solid $border-color-2;
+                        padding-left: $padding-30;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Content App
+
+.content-app {
+    margin-left: 350px;
+    padding: $padding-30;
+
+    .container-app {
+        max-width: 900px;
+        width: 100%;
+    }
+
+    .title-page {
+        margin-bottom: $margin-30;
+
+        h1 {
+            font-size: $font-size-5;
+            font-weight: $font-medium;
+            color: $blue-medium;
+            margin-bottom: $margin-10;
+        }
+
+        p {
+            font-size: $font-size-1;
+            margin: $margin-0;
+        }
+    }
+}
+
+// Testemunhos
+
+#testemunhos, #pedidos-de-oracao {
+    .nav-pills {
+        margin-bottom: $margin-20;
+
+        a {
+            &:first-child {
+                margin-right: $margin-10;
+            }
+        }
+    }
+}
+
+.modal-view {
+    span {
+        color: $cor-text;
+        margin-bottom: $margin-10;
+
+        &.message {
+            margin-bottom: $margin-0;
+        }
+
+        b {
+            color: $cor-text-dark;
+        }
+    }
+
+    .buttons {
+        a {
+            margin-left: $margin-10;
+
+            &:first-child {
+                margin: $margin-0;
+            }
+        }
+    }
+}
+
+.card-block {
+    @include card-br-bx();
+    position: relative;
+
+    input, select {
+        background-color: $background-gray-light;
+    }
+
+    .buttons {
+        a {
+            margin-left: $margin-10;
+
+            &:first-child {
+                margin: $margin-0;
+            }
+        }
+    }
+
+    .item {
+        &:first-child {
+            padding-top: $padding-0;
+        }
+
+        &:last-child {
+            border: none;
+            padding-bottom: $padding-0;
+        }
+    }
+}
+
+// Listagem
+
+.item {
+    border-bottom: 1px solid $border-color-1;
+    padding: $padding-20 $padding-0;
+
+    span {
+        color: $cor-text;
+        margin-right: $margin-20;
+
+        &.message {
+            margin-bottom: $margin-20;
+        }
+
+        b {
+            color: $cor-text-dark;
+        }
+    }
+}
+
+// Modal
+
+.modal {
+    .modal-content {
+        border: 0;
+        box-shadow: $box-shadow-1;
+        border-radius: $border-radius-1;
+
+        .modal-body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .modal-title {
+                font-size: $font-size-4;
+                color: $blue-medium;
+            }
+        }
+    }
+}
+
+// *
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $background-gray-light;
+}
+
+@media print {
+    body * {
+      visibility: hidden;
+    }
+    #modalPedidosOracao, #modalPedidosOracao * {
+      visibility: visible;
+    }
+    #modalPedidosOracao {
+      position: fixed;
+      left: 0;
+      top: 0;
+    }
+  }
+
+//  Editor
+
+.editor {
+    .cke_chrome {
+        border: 0;
+        border-radius: $border-radius-1;
+        overflow: hidden;
+        box-shadow: $box-shadow-1;
+
+        .cke_top {
+            background: $background-light;
+        }
+
+        .cke_bottom {
+            background: $background-light;
+        }
+    }
+}
+
+// Mensagens Doutrinárias
+
+#mensagens-doutrinarias {
+    .nav-pills {
+        margin-bottom: $margin-20;
+
+        a {
+            &:first-child {
+                margin-right: $margin-10;
+            }
+        }
+    }
+}
+
+#adicionar-mensagens-doutrinarias {
+    .editor {
+        @include card-br-bx();
+        padding-left: $padding-0;
+        padding-right: $padding-0;
+
+        input {
+            background: $background-gray-light;
+        }
+
+        .content-title {
+            padding: $padding-0 $padding-20;
+        }
+
+        .cke_chrome {
+            margin-top: $margin-20;
+            box-shadow: none;
+        }
+    }
+}
+
+// Uploads
+
+.content-upload {
+    border-radius: $border-radius-1;
+    overflow: hidden;
+    background: $background-light;
+    box-shadow: $box-shadow-1;
+
+    .title {
+        background-color: $primary-color;
+        padding: $padding-20;
+
+        h3 {
+            font-size: 36px;
+            font-weight: $font-light;
+        }
+
+        p {
+            font-size: $font-size-4;
+            font-weight: $font-light;
+        }
+
+        h3, p {
+            color: #ffffff;
+        }
+    }
+
+    .upload {
+        padding: $padding-20;
+        border-bottom: 1px solid $border-color-1;  
+
+            select {
+                background-color: $background-gray-light;
+                border-radius: $border-radius-1;
+            }
+
+            .arquivos {
+                width: 100%;
+
+                ul {
+                    padding: $padding-10 $padding-10 $padding-0;
+                    border-radius: $border-radius-1;
+                    background-color: $background-gray-light;
+
+                    li {
+                        padding: $padding-5 $padding-10;
+                        color: $cor-text;
+                        background-color: $background-light;
+                        box-shadow: $box-shadow-1;
+                        border-radius: $border-radius-1;
+                        margin-right: $margin-10;
+                        margin-bottom: $margin-10;
+
+                        i {
+                            cursor: pointer;
+
+                            &::before {
+                                font-size: $font-size-1;
+                                margin-left: $margin-5;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+
+    .files {
+        padding: $padding-20;
+        border-bottom: 1px solid $border-color-1;
+    }
+
+    .conclused {
+        padding: $padding-20;
+
+        textarea {
+            background: $background-gray-light;
+        }
+    }
+}
+
+// Cadastrar Usuário
+
+#cadastrar-usuario, #editar-usuario {
+    .card-block {
+        padding-bottom: $padding-5;
+        padding-left: $padding-5;
+        padding-right: $padding-5;
+    }
+}

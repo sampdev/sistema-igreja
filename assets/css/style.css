@@ -1,0 +1,317 @@
+ul {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  transition: 0.2s ease-in-out;
+  color: #3c67ee; }
+  a:hover {
+    text-decoration: none;
+    color: #004894; }
+
+.flaticon:before {
+  margin: 0px;
+  font-weight: 400;
+  font-size: 24px; }
+
+p {
+  color: #999999; }
+
+b {
+  font-weight: 500; }
+
+button {
+  border: none; }
+  button:focus {
+    outline: none; }
+
+input, select {
+  border-radius: 50px; }
+
+textarea {
+  border-radius: 5px; }
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px 20px;
+  color: #999999;
+  border: 0; }
+
+form {
+  width: 100%; }
+
+.btn-si-action {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; }
+  .btn-si-action i {
+    color: #ffffff; }
+  .btn-si-action.approved {
+    background-color: #2ecc71; }
+  .btn-si-action.recused {
+    background-color: #e74c3c; }
+  .btn-si-action.edit {
+    background-color: #3498db; }
+  .btn-si-action.view {
+    background-color: #e6eff9; }
+    .btn-si-action.view i {
+      color: #3498db; }
+
+.btn-si {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: #e6eff9; }
+  .btn-si.approved {
+    color: #2ecc71; }
+  .btn-si.recused {
+    color: #e74c3c; }
+  .btn-si.pendent {
+    color: #999999; }
+
+#nav-app:-webkit-scrollbar {
+  display: none; }
+
+#nav-app {
+  position: fixed;
+  width: 350px;
+  max-height: 100%;
+  top: 0;
+  bottom: 0;
+  box-shadow: 0 0 1px 0 rgba(59, 89, 178, 0.1), 0 2px 8px rgba(59, 89, 178, 0.15);
+  background-color: #ffffff;
+  overflow-y: auto; }
+  #nav-app .brand {
+    padding: 20px;
+    border-bottom: 1px solid #e6f1fd; }
+    #nav-app .brand .main-brand img {
+      max-height: 50px; }
+  #nav-app .user {
+    border-bottom: 1px solid #e6f1fd;
+    padding: 20px; }
+    #nav-app .user .content-img {
+      border-radius: 50%;
+      overflow: hidden;
+      width: 60px;
+      height: 60px; }
+    #nav-app .user .content-text {
+      margin-left: 10px; }
+      #nav-app .user .content-text p, #nav-app .user .content-text span {
+        margin-bottom: 0px; }
+      #nav-app .user .content-text .user-name {
+        font-size: 16px;
+        color: #3c67ee;
+        font-weight: 500; }
+      #nav-app .user .content-text .user-function {
+        font-size: 14px;
+        font-weight: 400;
+        color: #999999; }
+    #nav-app .user .flaticon:before {
+      color: #999999; }
+  #nav-app .main-nav-app li a {
+    display: flex;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e6f1fd;
+    color: #999999;
+    font-weight: 500;
+    cursor: pointer; }
+    #nav-app .main-nav-app li a:hover {
+      color: #999999; }
+    #nav-app .main-nav-app li a.dropdown-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+  #nav-app .main-nav-app li ul li {
+    background: #f4f9ff; }
+    #nav-app .main-nav-app li ul li:last-child a {
+      border: none; }
+    #nav-app .main-nav-app li ul li a {
+      border-bottom: 1px solid #d8e6f7;
+      padding-left: 30px; }
+
+.content-app {
+  margin-left: 350px;
+  padding: 30px; }
+  .content-app .container-app {
+    max-width: 900px;
+    width: 100%; }
+  .content-app .title-page {
+    margin-bottom: 30px; }
+    .content-app .title-page h1 {
+      font-size: 24px;
+      font-weight: 500;
+      color: #3c67ee;
+      margin-bottom: 10px; }
+    .content-app .title-page p {
+      font-size: 14px;
+      margin: 0px; }
+
+#testemunhos .nav-pills, #pedidos-de-oracao .nav-pills {
+  margin-bottom: 20px; }
+  #testemunhos .nav-pills a:first-child, #pedidos-de-oracao .nav-pills a:first-child {
+    margin-right: 10px; }
+
+.modal-view span {
+  color: #999999;
+  margin-bottom: 10px; }
+  .modal-view span.message {
+    margin-bottom: 0px; }
+  .modal-view span b {
+    color: #333333; }
+.modal-view .buttons a {
+  margin-left: 10px; }
+  .modal-view .buttons a:first-child {
+    margin: 0px; }
+
+.card-block {
+  border-radius: 5px;
+  box-shadow: 0 0 1px 0 rgba(59, 89, 178, 0.1), 0 2px 8px rgba(59, 89, 178, 0.15);
+  padding: 20px;
+  background-color: #ffffff;
+  position: relative; }
+  .card-block input, .card-block select {
+    background-color: #f4f9ff; }
+  .card-block .buttons a {
+    margin-left: 10px; }
+    .card-block .buttons a:first-child {
+      margin: 0px; }
+  .card-block .item:first-child {
+    padding-top: 0px; }
+  .card-block .item:last-child {
+    border: none;
+    padding-bottom: 0px; }
+
+.item {
+  border-bottom: 1px solid #e6f1fd;
+  padding: 20px 0px; }
+  .item span {
+    color: #999999;
+    margin-right: 20px; }
+    .item span.message {
+      margin-bottom: 20px; }
+    .item span b {
+      color: #333333; }
+
+.modal .modal-content {
+  border: 0;
+  box-shadow: 0 0 1px 0 rgba(59, 89, 178, 0.1), 0 2px 8px rgba(59, 89, 178, 0.15);
+  border-radius: 5px; }
+  .modal .modal-content .modal-body {
+    display: flex;
+    flex-direction: column; }
+  .modal .modal-content .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .modal .modal-content .modal-header .modal-title {
+      font-size: 20px;
+      color: #3c67ee; }
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f9ff; }
+
+@media print {
+  body * {
+    visibility: hidden; }
+
+  #modalPedidosOracao, #modalPedidosOracao * {
+    visibility: visible; }
+
+  #modalPedidosOracao {
+    position: fixed;
+    left: 0;
+    top: 0; } }
+.editor .cke_chrome {
+  border: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 1px 0 rgba(59, 89, 178, 0.1), 0 2px 8px rgba(59, 89, 178, 0.15); }
+  .editor .cke_chrome .cke_top {
+    background: #ffffff; }
+  .editor .cke_chrome .cke_bottom {
+    background: #ffffff; }
+
+#mensagens-doutrinarias .nav-pills {
+  margin-bottom: 20px; }
+  #mensagens-doutrinarias .nav-pills a:first-child {
+    margin-right: 10px; }
+
+#adicionar-mensagens-doutrinarias .editor {
+  border-radius: 5px;
+  box-shadow: 0 0 1px 0 rgba(59, 89, 178, 0.1), 0 2px 8px rgba(59, 89, 178, 0.15);
+  padding: 20px;
+  background-color: #ffffff;
+  padding-left: 0px;
+  padding-right: 0px; }
+  #adicionar-mensagens-doutrinarias .editor input {
+    background: #f4f9ff; }
+  #adicionar-mensagens-doutrinarias .editor .content-title {
+    padding: 0px 20px; }
+  #adicionar-mensagens-doutrinarias .editor .cke_chrome {
+    margin-top: 20px;
+    box-shadow: none; }
+
+.content-upload {
+  border-radius: 5px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 0 1px 0 rgba(59, 89, 178, 0.1), 0 2px 8px rgba(59, 89, 178, 0.15); }
+  .content-upload .title {
+    background-color: #004894;
+    padding: 20px; }
+    .content-upload .title h3 {
+      font-size: 36px;
+      font-weight: 300; }
+    .content-upload .title p {
+      font-size: 20px;
+      font-weight: 300; }
+    .content-upload .title h3, .content-upload .title p {
+      color: #ffffff; }
+  .content-upload .upload {
+    padding: 20px;
+    border-bottom: 1px solid #e6f1fd; }
+    .content-upload .upload select {
+      background-color: #f4f9ff;
+      border-radius: 5px; }
+    .content-upload .upload .arquivos {
+      width: 100%; }
+      .content-upload .upload .arquivos ul {
+        padding: 10px 10px 0px;
+        border-radius: 5px;
+        background-color: #f4f9ff; }
+        .content-upload .upload .arquivos ul li {
+          padding: 5px 10px;
+          color: #999999;
+          background-color: #ffffff;
+          box-shadow: 0 0 1px 0 rgba(59, 89, 178, 0.1), 0 2px 8px rgba(59, 89, 178, 0.15);
+          border-radius: 5px;
+          margin-right: 10px;
+          margin-bottom: 10px; }
+          .content-upload .upload .arquivos ul li i {
+            cursor: pointer; }
+            .content-upload .upload .arquivos ul li i::before {
+              font-size: 14px;
+              margin-left: 5px; }
+  .content-upload .files {
+    padding: 20px;
+    border-bottom: 1px solid #e6f1fd; }
+  .content-upload .conclused {
+    padding: 20px; }
+    .content-upload .conclused textarea {
+      background: #f4f9ff; }
+
+#cadastrar-usuario .card-block, #editar-usuario .card-block {
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+/*# sourceMappingURL=style.css.map */
